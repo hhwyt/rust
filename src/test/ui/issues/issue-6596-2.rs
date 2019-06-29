@@ -2,7 +2,7 @@
 
 macro_rules! g {
     ($inp:ident) => (
-        { $inp $nonexistent }
+        { $inp $nonexistent } //~ ERROR unknown macro variable `nonexistent`
         //~^ ERROR unknown macro variable `nonexistent`
     );
 }

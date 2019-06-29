@@ -356,7 +356,7 @@ pub mod parser {
 
     declare_lint! {
         pub META_VARIABLE_MISUSE,
-        Allow,
+        Deny,
         "possible meta-variable misuse at macro definition"
     }
 }
