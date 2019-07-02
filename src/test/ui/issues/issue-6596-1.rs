@@ -1,6 +1,6 @@
 macro_rules! e {
     ($inp:ident) => (
-        $nonexistent
+        $nonexistent //~ ERROR unknown macro variable `nonexistent`
         //~^ ERROR unknown macro variable `nonexistent`
     );
 }

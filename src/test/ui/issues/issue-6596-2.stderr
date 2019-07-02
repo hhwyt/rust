@@ -7,5 +7,13 @@ LL |         { $inp $nonexistent }
 LL |     g!(foo);
    |     -------- in this macro invocation
 
-error: aborting due to previous error
+error: unknown macro variable `nonexistent`
+  --> $DIR/issue-6596-2.rs:5:16
+   |
+LL |         { $inp $nonexistent }
+   |                ^^^^^^^^^^^^
+   |
+   = note: #[deny(meta_variable_misuse)] on by default
+
+error: aborting due to 2 previous errors
 
